@@ -47,6 +47,7 @@ const closeBtn = document.querySelector("#nav__toggle-close");
 const openNav = () => {
     nav.style.opacity = 1;
     nav.style.visibility = "visible";
+    nav.style.pointerEvents = "visible";
     openBtn.style.display = "none";
     closeBtn.style.display = "inline-block";
 }
