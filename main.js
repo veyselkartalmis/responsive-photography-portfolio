@@ -38,3 +38,31 @@ var swiper = new Swiper(".mySwiper", {
 		},
 	},
 });
+
+/* HAMBURGER MENU */
+const nav = document.querySelector(".nav__links");
+const openBtn = document.querySelector("#nav__toggle-open");
+const closeBtn = document.querySelector("#nav__toggle-close");
+
+const openNav = () => {
+    nav.style.opacity = 1;
+    nav.style.visibility = "visible";
+    openBtn.style.display = "none";
+    closeBtn.style.display = "inline-block";
+}
+
+openBtn.addEventListener("click", openNav);
+
+const closeNav = () => {
+    nav.style.opacity = 0;
+    nav.style.visibility = "hidden";
+    closeBtn.style.display = "none";
+    openBtn.style.display = "inline-block";
+}
+
+closeBtn.addEventListener("click", closeNav);
+
+nav.querySelectorAll("li a").forEach(navLink => {
+    navLink.addEventListener("click", closeNav);
+});
+
