@@ -1,6 +1,6 @@
 
 # Responsive Photography Portfolio
-Full Responive + GSAP Animation
+Full Responsive + GSAP Animation
 
 ### [Live Site](https://responsive-photography-portfolio.netlify.app)
 
